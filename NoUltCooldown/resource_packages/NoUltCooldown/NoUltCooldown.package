@@ -1,0 +1,11 @@
+mod = [
+	"NoUltCooldown"
+]
+
+package = [
+	"resource_packages/NoUltCooldown/NoUltCooldown"
+]
+
+lua = [
+	"scripts/mods/NoUltCooldown/*"
+]
