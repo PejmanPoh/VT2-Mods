@@ -5,7 +5,9 @@ local mod = get_mod("NoUltCooldown")
 --]]
 
 mod:hook_safe(CareerExtension, "update", function (self, unit, input, dt, context, t)
-	self._cooldown = 0
+	if mod:get("bot_cooldown") or self.player:is_player_controlled() then
+		self._cooldown = 0
+	end
 end)
 
 --[[
